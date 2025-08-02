@@ -1,0 +1,5 @@
+
+Name	Gender	Age
+
+Aashish	Male	18
+Bijita	female	18

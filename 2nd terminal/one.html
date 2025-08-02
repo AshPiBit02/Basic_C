@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="xxx">
+    Enter first number:<input type="number" name="a"><br>
+    Enter second number:<input type="number" name="b"><br>
+    <input type="button" value="result" onclick="mul()">
+    </form>
+    <script>
+        function mul()
+        {
+            x=parseInt(document.xxx.a.value);
+            y=parseInt(document.xxx.b.value);
+            z=x*y;
+            document.write(z,"is the product");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+1	k	l	o	1
+2	o	po	p	2
+3	l	p	o	1

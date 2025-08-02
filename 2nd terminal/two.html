@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="ooo">
+        Enter first number:<input type="number" name="a"><br>
+        Enter second number:<input type="number" name="b"><br>
+        Enter third number:<input type="number" name="c"><br>
+        <input type="button" value="Smallest" onclick="small()">
+    </form>
+    <script>
+        function small()
+        {
+            x=parseInt(document.ooo.a.value);
+            y=parseInt(document.ooo.b.value);
+            z=parseInt(document.ooo.c.value);
+            if(x<y&&x<z)
+            document.write(x," is the smallest number.");
+            else if(y<z)
+            document.write(y," is the smallest number.");
+        else
+        document.write(z," is the smallest number.");
+        }
+    </script>
+</body>
+</html>

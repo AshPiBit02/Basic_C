@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="boo">
+        
+       <font color="blue"> 
+        Enter Password:<input type="password" name="a"><br>
+        Re-type Password:<input type="password" name="b"></font><br>
+        <input type="button" value="Login" onclick="P()">
+    </form>
+    <script>
+        function P()
+        {
+            var x=document.boo.a.value
+            var y=document.boo.b.value
+            if(x==y)
+            
+                document.write("You are successfully logged in.")
+            
+            else
+            
+               alert("Incorrect Password!")
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="rossi">
+        Enter numbers:<input type="text" name="a">
+        <input type="button" value="Mean" onclick="M()">
+    </form>
+    <script>
+        function M()
+        {
+            var a=document.rossi.a.value
+            var x=a.split(" ")
+            var sum=0
+            for( var i=0;i<x.length;i++)
+            sum=sum+parseInt(x[i])
+        document.write(sum/x.length)
+        }
+    </script>
+</body>
+</html>

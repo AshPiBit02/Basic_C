@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="oho">
+        <h2>Check which number is smallest among these three numbers:<br></h2>
+        Enter first number:<input type="number" name="a"><br>
+        Enter second number:<input type="number" name="b"><br>
+        Enter third number:<input type="number" name="c"><br>
+        <input type="button" value="Check" onclick="sma()">
+
+    </form>
+    <script>
+        function sma()
+        {
+            var x=parseInt(document.oho.a.value)
+            var y=parseInt(document.oho.b.value)
+            var z=parseInt(document.oho.c.value)
+            if(x<y&&x<z)
+            {
+                document.write(x," is the smallest number.")
+            }
+            else if(y<z)
+            {
+                document.write(y," is the smallest number.")
+            }
+            else
+            {
+                document.write(z," is the smallest number.")
+            }
+        }
+    </script>
+</body>
+</html>

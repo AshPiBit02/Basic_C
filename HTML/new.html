@@ -1,0 +1,47 @@
+<Html>
+    <Head>
+        <Title>Student Detail Form</Title>
+    </Head>
+    <Body>
+        <center>
+            <h1>XYZ college fo IT</h1>
+            <B>Student Detail From:</B>
+
+        </center>
+        <hr color="Blue">
+        <form method="post" action="myserver.php">
+            <fieldset>
+                <legned align="top">Personal information </legned>
+                <p>Name:<Input type="text"size=15 name="txt"_name"maxlength=25></p>
+                    <p>Address:<Input type="text"size =25 name="txt_addr" maxlenght=45></p>
+                        <p>Sex:<input type="radio"name="r1" valur="male">male
+                        <Input type="radio"name="r1" value="Female"checked>Female</p>
+                        
+            </fieldset>
+        <fieldset>
+            <legend align="right">Hobby and education</legend>
+            <p>Hobbies:<input type="checkbox"name="chk1"value="Watching movies">movies
+            <input type="checkbox" name="chk2" value="Playing Football"checked>Football
+        <input type"checkbox" name ="chk3" value="Reading Noble">Noble
+    <input type="checkbox" name="chk4" value="other">others
+</p>
+<p>
+    Education:<select>
+        <option value="PHD">PHD</option>
+        <option value="Master">Master</option>
+        <option value="Bachelor">Bachelor</option>
+        <option value="PLIS two">+2</option>
+        <option value="SLC"selected>SLC</option>
+    </select>
+</p>
+  </fieldset>
+  Few words:
+  <br>
+  <textarea rows="7" cols="50"></textarea>
+  <p>
+    <input type="Submit" value="Send">
+    <input type="Reset" value="Clear">
+</p>
+</form>
+</Body>
+</Html>

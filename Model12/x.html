@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motional Graphics</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 200%;
+        height: 100vh;
+        display: grid;
+        justify-content: left;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    .circle {
+        width: 500px;
+        height: 500px;
+        background-color: #ff5e00;
+        border-radius: 100%;
+        animation: moveCircle 5s ease infinite alternate;
+    }
+
+    @keyframes moveCircle {
+        from {
+            transform: translateX(0px);
+        }
+        to {
+            transform: translateX(300px);
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="circle"></div>
+</div>
+</body>
+</html>

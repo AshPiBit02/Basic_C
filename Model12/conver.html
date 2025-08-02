@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Length Converter</title>
+<style>
+    input[type="number"] {
+        width: 100px;
+    }
+</style>
+</head>
+<body>
+    <h2>Length Converter</h2>
+    <div>
+        <label for="inputValue">Value:</label>
+        <input type="number" id="inputValue">
+        <select id="inputUnit">
+            <option value="m">Meter</option>
+            <option value="km">Kilometer</option>
+            <option value="in">Inch</option>
+            <option value="ft">Foot</option>
+            <option value="mi">Mile</option>
+        </select>
+    </div>
+    <div>
+        <label for="outputValue">Result:</label>
+        <input type="text" id="outputValue" readonly>
+        <select id="outputUnit">
+            <option value="m">Meter</option>
+            <option value="km">Kilometer</option>
+            <option value="in">Inch</option>
+            <option value="ft">Foot</option>
+            <option value="mi">Mile</option>
+        </select>
+    </div>
+    <button onclick="convertLength()">Convert</button>
+
+    <script>
+        function convertLength() {
+            let inputValue = parseFloat(document.getElementById("inputValue").value);
+            let inputUnit = document.getElementById("inputUnit").value;
+            let outputUnit = document.getElementById("outputUnit").value;
+            let outputValue = document.getElementById("outputValue");
+
+            let meters;
+
+            switch (inputUnit) {
+                case "m":
+                    meters = inputValue;
+                    break;
+                case "km":
+                    meters = inputValue * 1000;
+                    break;
+                case "in":
+                    meters = inputValue * 0.0254;
+                    break;
+                case "ft":
+                    meters = inputValue * 0.3048;
+                    break;
+                case "mi":
+                    meters = inputValue * 1609.34;
+                    break;
+                default:
+                    outputValue.value = "Invalid input unit";
+                    return;
+            }
+
+            let result;
+
+            switch (outputUnit) {
+                case "m":
+                    result = meters;
+                    break;
+                case "km":
+                    result = meters / 1000;
+                    break;
+                case "in":
+                    result = meters / 0.0254;
+                    break;
+                case "ft":
+                    result = meters / 0.3048;
+                    break;
+                case "mi":
+                    result = meters / 1609.34;
+                    break;
+                default:
+                    outputValue.value = "Invalid output unit";
+                    return;
+            }
+
+            outputValue.value = result.toFixed(2);
+        }
+    </script>
+</body>
+</html>

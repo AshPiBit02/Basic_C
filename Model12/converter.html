@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit Converter</title>
+</head>
+<body>
+<h2>Length Unit Converter</h2>
+
+<div>
+    <label for="lengthInput">Enter Length:</label>
+    <input type="number" id="lengthInput">
+    <select id="unitSelect">
+        <option value="millimeter">Millimeter (mm)</option>
+        <option value="meter">Meter (m)</option>
+        <option value="kilometer">Kilometer (km)</option>
+        <option value="nanometer">Nanometer (nm)</option>
+        <option value="angstrom">Angstrom (Å)</option>
+    </select>
+    <button onclick="convertLength()">Convert</button>
+</div>
+
+<p id="result"></p>
+
+<script>
+function convertLength() {
+    var lengthInput = parseFloat(document.getElementById("lengthInput").value);
+    var unitSelect = document.getElementById("unitSelect").value;
+    var result = 0;
+
+    switch(unitSelect) {
+        case "millimeter":
+            result = lengthInput;
+            break;
+        case "meter":
+            result = lengthInput * 0.001;
+            break;
+        case "kilometer":
+            result = lengthInput * 0.000001;
+            break;
+        case "nanometer":
+            result = lengthInput * 1000000;
+            break;
+        case "angstrom":
+            result = lengthInput * 10000000;
+            break;
+        default:
+            result = "Invalid unit";
+    }
+
+    document.getElementById("result").innerText = "Converted Length: " + result + " " + unitSelect;
+}
+</script>
+
+</body>
+</html>

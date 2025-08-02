@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="aasi">
+        Enter principle:<input type="number" name="a"><br>
+        Enter time:<input type="number" name="b"><br>
+        Enter rate:<input type="number" name="c"><br>
+        <input type="button" value="Simple Intrest" onclick="SI()">
+    </form>
+    <script>
+        function SI()
+        {
+            var x=parseInt(document.aasi.a.value)
+            var y=parseInt(document.aasi.b.value)
+            var z=parseInt(document.aasi.c.value)
+            s=(x*y*z)/100
+            document.write(s," is the simple interest")
+        }
+    </script>
+</body>
+</html>

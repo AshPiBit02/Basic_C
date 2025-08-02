@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="validity">
+    Enter Email:<input type="email" name="a"><br>
+    Enter Password:<input type="password" name="b"><br>
+    Re-type Password:<input type="password" name="c"><br>
+    <input type="button" value="Log In" onclick="val()">
+</form>
+<script>
+    function val()
+    {
+        var x=document.validity.a.value
+        var y=document.validity.b.value
+        var z=document.validity.c.value
+        if(x=="" || y=="" || z=="")
+        {
+            alert("Fields must be filled!")
+        }
+        else
+        {
+        if(y==z)
+        {
+           document.write("Login successful") 
+        }
+        else
+        {
+            alert("Password didn't match!")
+        }
+    }
+    }
+</script>
+</body>
+</html>

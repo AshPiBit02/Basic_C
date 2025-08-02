@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="factorial">
+        Enter a number:<input type="number" name="a"><br>
+        <input type="button" value="Cal" onclick="fact()">
+    </form>
+    <script>
+        function fact()
+        {
+            var x=parseInt(document.factorial.a.value)
+            
+            if(x==1 || x==0)
+            {
+             document.write("1 is the factorial.")   
+            }
+            else{
+                for(var i=1;i<x;i++)
+                {
+             var fact=x*(x-1);
+                }
+            document.write(fact," is the factorial.")
+            }
+        }
+    </script>
+</body>
+</html>

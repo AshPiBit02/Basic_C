@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../HTML"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"OLD.C": "cpp"
+		}
+	}
+}

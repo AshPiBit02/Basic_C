@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="ooo">
+        Enter any number:<input type="number" name="a"><br>
+        <input type="button" value="Check" onclick="res()">
+    </form>
+    <script>
+        function res()
+        {
+            var x=parseInt(document.ooo.a.value)
+            if(x==0)
+            {
+                document.write(x," is neutral number.")
+            }
+           else if(x>0)
+            {
+                document.write(x," is positive number.")
+            }
+            else
+            {
+                document.write(x," is negative number.")
+            }
+        }
+    </script>
+</body>
+</html>

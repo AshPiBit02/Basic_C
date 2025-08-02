@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="swap">
+        Enter first number:<input type="number" name="a"><br>
+        Enter second number:<input type="number" name="b"><br>
+        <input type="button" value="Swap" onclick="Swap()">
+    </form>
+    <script>
+        function Swap()
+        {
+            var x=parseInt(document.swap.a.value)
+            var y=parseInt(document.swap.b.value)
+            document.write("Before swapping a=",x,"&b=",y)
+            
+            var z= x
+            var x=y
+            var y=z
+            document.write("<br>After swapping a=",x,"&b=",y)
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="calculator">
+        Enter first no:<input type="number" name="a"><br>
+        Enter second no:<input type="number" name="b"><br>
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="-" onclick="sub()">
+        <input type="button" value="*" onclick="mul()">
+        <input type="button" value="/" onclick="div()">
+    </form>
+    <script>
+        function add(){
+            var x=parseInt(document.calculator.a.value)
+            var y=parseInt(document.calculator.b.value)
+            z=x+y
+            document.write(z)
+        }
+         function sub(){
+            var x=parseInt(document.calculator.a.value)
+            var y=parseInt(document.calculator.b.value)
+            z=x-y
+            document.write(z)
+        }
+         function mul(){
+            var x=parseInt(document.calculator.a.value)
+            var y=parseInt(document.calculator.b.value)
+            z=x*y
+            document.write(z)
+        }
+         function div(){
+            var x=parseInt(document.calculator.a.value)
+            var y=parseInt(document.calculator.b.value)
+            z=x/y
+            document.write(z)
+        }
+    </script>
+</body>
+
+</html>

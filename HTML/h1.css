@@ -1,0 +1,6 @@
+ A {text-decoration:none}
+ A:hover {text-decoration: underline;color:red; background-color:#CCFFCC}
+ LI EM {color:red;font-weight: bold}
+ UL {margin-left:2cm}
+ UL UL {text-decoration: underline;margin-left:5cm}
+ 

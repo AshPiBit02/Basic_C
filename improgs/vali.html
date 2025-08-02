@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="validation">
+        Enter email:<input type="email" name="a"><br>
+        Enter password:<input type="password" name="b"><br>
+        Re-type password:<input type="password" name="c"><br>
+        <input type="button" value="Log In" Onclick="Val()">
+    </form>
+    <script>
+        function Val()
+        {
+            var x=document.validation.a.value
+            var y=document.validation.b.value
+            var z=document.validation.c.value
+            if(x=="" || y=="" || z=="")
+            {
+                alert("Fields must be filled.")
+            }
+            else
+            {
+                if(y==z)
+                {
+                    document.write("Log In successful.")
+                }
+                else
+                {
+                   alert("Re-type password")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

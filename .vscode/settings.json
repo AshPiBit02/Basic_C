@@ -1,0 +1,38 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "MyFirstSQL",
+            "database": "MyData",
+            "username": "aashi249",
+            "password": "$aashi249!"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mysql",
+            "database": "mysql",
+            "username": "root",
+            "password": ""
+        }
+    ],
+    "Codegeex.RepoIndex": true,
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "stdio.h": "c",
+        "WAP2.C": "cpp"
+    }
+}
